@@ -12,7 +12,7 @@ struct ContentView: View {
                 ForEach(libros) { libro in
                     NavigationLink {
                         // Aquí puedes agregar la vista detallada del libro
-                        Text(libro.titulo) // Muestra el título del libro como ejemplo
+                        BookDetailView(libro: libro)
                     } label: {
                         Text(libro.titulo) // Muestra el título del libro en la lista
                     }
